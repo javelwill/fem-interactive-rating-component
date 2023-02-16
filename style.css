@@ -1,0 +1,116 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-dark-blue);
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.thanks {
+  display: none;
+}
+
+.rating {
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  margin: 2em;
+  border-radius: 1.2em;
+  padding: 2.4em;
+  width: 412px;
+
+}
+
+.star-illustration {
+  background: var(--dark-blue);
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 50%;
+  margin-bottom: 3.0em;
+
+}
+
+h1 {
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+p {
+  color: var(--light-grey);
+  font-size: 1.4rem;
+  line-height: 2.2em;
+}
+
+.scale {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 3em
+}
+
+.scale li {
+  background: var(--dark-blue);
+  width: 42px;
+  height: 42px;
+  padding: 2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-grey);
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.scale li:hover {
+  background: var(--medium-grey);
+  color: var(--white);
+}
+
+.scale li.active {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.submit {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--orange);
+  padding: 1.2em;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: var(--white);
+  color: var(--orange)
+}
